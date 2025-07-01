@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bike Ride Adventures</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html"><h1 class="logo">BikeRide</h1></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#book">Booking</a></li>
+      <li><a href="rental.html">Rental</a></li>
+    </ul>
+  </div>
+</nav>
+  <div class="cursor"></div>
+  
+
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Explore with Bike Ride Adventures</h1>
+      <h2><p>Your journey starts here!</p></h2>
+      <br><a href="#book" class="btn">Book Your Ride</a><br>
+    </div>
+  </header>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>We provide thrilling guided bike rides through scenic routes. Perfect for adventurers, nature lovers, and fitness enthusiasts.</p>
+  </section>
+
+  <section class="packages" id="packages">
+    <h2>Ride Packages</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Mountain Explorer</h3>
+        <p>Conquer rough terrains and enjoy breathtaking mountain views.</p>
+      </div>
+      <div class="card">
+        <h3>Coastal Cruise</h3>
+        <p>Ride along the coast with the sea breeze and sunsets.</p>
+      </div>
+      <div class="card">
+        <h3>City Sprint</h3>
+        <p>Discover the city's hidden gems on two wheels.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="parallax"></section>
+
+  <section class="booking" id="book">
+    <h2>Book Your Ride</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <select required>
+        <option value="">Select Package</option>
+        <option value="mountain">Mountain Explorer</option>
+        <option value="coastal">Coastal Cruise</option>
+        <option value="city">City Sprint</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="formMessage"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bike Ride Adventures. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
