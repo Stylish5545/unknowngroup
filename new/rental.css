@@ -1,0 +1,148 @@
+body{
+    /* background-color: rgb(228, 202, 169); */
+}
+* Navigation Bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(196, 30, 30, 0.404);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  height: 3rem;
+}
+.nav-container a{
+    text-decoration: none;
+}
+body:hover  .cursor {
+    transform: scale(1.5);
+}
+.logo  {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #3b3636;
+  text-decoration: none;
+  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  padding: 4px 0;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ff4a57;
+  transition: width 0.3s;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  width: 100%;
+}
+
+
+
+
+
+/* Rentals Section */
+.rentals {
+  background: #3d66a9;
+  text-align: center;
+}
+
+.bike-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: #007bff;
+}
+
+.bike-card {
+  background: #0f0e0eda;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.bike-card:hover {
+  transform: translateY(10px);
+  padding: 2;
+}
+
+.bike-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.bike-card h3 {
+  margin: 0.5rem 0;
+}
+
+.bike-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 0.5rem 0 1rem;
+}
+
+.bike-card ul li {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.rent-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.rent-btn:hover {
+  background: #0056b3;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
